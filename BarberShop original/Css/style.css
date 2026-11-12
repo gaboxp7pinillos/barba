@@ -1,0 +1,26 @@
+
+:root {
+    --neon-green: #39ff14;
+    --dark: #0f0f0f;
+}
+
+body { background: var(--dark); color: white; font-family: sans-serif; margin: 0; }
+
+nav { display: flex; justify-content: space-between; padding: 20px 5%; background: rgba(0,0,0,0.8); }
+.logo span { color: var(--neon-green); font-weight: bold; }
+
+#hero { height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(to bottom, transparent, #000), url('https://images.unsplash.com/photo-1503951914875-452162b09f6f'); background-size: cover; }
+
+h1 { font-size: 3rem; text-transform: uppercase; text-shadow: 0 0 10px var(--neon-green); }
+
+.grid-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; padding: 20px; }
+.grid-galeria img { width: 100%; transition: 0.4s; filter: grayscale(0.5); border: 2px solid #333; }
+.grid-galeria img:hover { transform: scale(1.05); filter: grayscale(0); border-color: var(--neon-green); }
+
+.tarjeta-precio { background: #1a1a1a; padding: 30px; text-align: center; border-bottom: 4px solid var(--neon-green); width: 80%; margin: 20px auto; }
+
+.btn-wpp {
+    position: fixed; bottom: 20px; right: 20px; background: var(--neon-green);
+    color: black; padding: 15px 25px; border-radius: 50px; font-weight: bold;
+    text-decoration: none; box-shadow: 0 0 20px var(--neon-green);
+}
